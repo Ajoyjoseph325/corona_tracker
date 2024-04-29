@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<title></title>
+</head>
+<body>
+  </body>
+</html>
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+    <!-- fontawesome v5 -->
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+	<!-- showhide script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.menu').toggle("slide");
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+    <section class="forms">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a class="brand-logo" href="index.html">Shop Register</a>
+            </div>
+            <!-- //logo -->
+            <div class="forms-grid">
+
+                <!-- login -->
+                <div class="login">
+                    <span class="fas fa-sign-in-alt"></span>
+                    <strong>Welcome!</strong>
+                    <span>Sign in to your account</span>
+
+                    <form action="shoplogin.php" method="post" class="login-form">
+                        <fieldset>
+                            <div class="form">
+                                <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">E-mail</label>
+                                    <input type="email" required="" name="myusername" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-eye"></span>
+                                    <label class="form-label" for="input">Password</label>
+                                    <input type="password" required="" name="mypassword" class="form-text">
+                                </div>
+                                <div class="form-row bottom">
+                                    <div class="form-check">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-row bottom">
+                                    
+                                        
+                                        
+									<div id="show"><a class="btn btn-login">Register</a></div>
+                                    <button class="btn btn-login">Login </button>
+                               
+                                <div class="form-row button-login">
+                                  
+									
+                                </div>
+								 
+								</div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- //login -->
+<div class="menu" style="display: none;">
+                <div class="register">
+                    <span class="fas fa-user-circle"></span>
+                    <strong>Create account!</strong>
+                    <form action="shopregister.php" method="post" class="register-form">
+                        <fieldset>
+                            <div class="form">
+                                <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">shopname</label>
+                                    <input type="text" required="" name="shopname" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">Address</label>
+                                    <input type="text area" required="" name="address" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">Pincode</label>
+                                    <input type="text"  pattern="[0-9]{6}" 
+       title="allows 6 numbers" required="" name="pincode" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">phonenumber</label>
+                                    <input type="text" pattern="[5-9]{1}[0-9]{9}" 
+       title="Phone number with 5-9 and remaing 9 digit with 0-9" required=""  name="phone" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">category</label>
+                                    <select class="form-text" name="category">
+                                        <option value="Supermarket">Supermarket</option>
+                                        <option value="Electronics">Electronics</option>
+                                    </select>
+                                    
+                                </div>
+                                 <div class="form-row">
+                                    <span class="fas fa-user"></span>
+                                    <label class="form-label" for="input">lots</label>
+                                    <input type="number" required="" name="lots" class="form-text">
+                                </div> 
+                                <div class="form-row">
+                                    <span class="fas fa-envelope"></span>
+                                    <label class="form-label" for="input">E-mail</label>
+                                    <input type="email" required="" name ="email" class="form-text">
+                                </div>
+                                <div class="form-row">
+                                    <span class="fas fa-lock"></span>
+                                    <label class="form-label" for="input">Password</label>
+                                    <input type="password" required="" name="password" class="form-text">
+                                </div>
+                                <div class="form-row button-login">
+                                    <input type="Submit" class="btn btn-login" name="submit">
+                                   
+                                </div>
+                            </div>
+                        </fieldset>
+                        </form>
+
+                        <span class="create-account">Or create account using social media!</span>
+
+                        <div class="social-media">
+                            <a href="#facebook" class="fb"><span class="fab fa-facebook"></span></a>
+                            <a href="#twitter" class="tw"><span class="fab fa-twitter"></span></a>
+                            <a href="#pinterest" class="pi"><span class="fab fa-pinterest"></span></a>
+                        </div>
+                </div>
+                <!-- //register -->
+				</div>
+            </div>
+
+           
+
+           
+        </div>
+    </section>
+
+</body>
+
+</html>
